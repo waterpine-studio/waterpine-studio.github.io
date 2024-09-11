@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Project Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body onload="displayDateTime()">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#" onclick="loadProject('projects/hull.html')">University of Hull</a></li>
+                <li><a href="#" onclick="loadProject('projects/json_formatter/index.html')">JSON Formatter</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div id="date-time-info">
+            </div>
+            <h1>Welcome to the Project Dashboard</h1>
+            <p>Select a project from the left panel to view its details here.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Waterpine Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

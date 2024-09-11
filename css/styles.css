@@ -1,0 +1,88 @@
+/* Apply full height to the body and html */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: #4c8caf;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar (Left Panel) */
+.sidebar {
+    width: 20%;
+    background-color: #4c8caf;
+    color: white;
+    padding: 20px;
+    height: 100%; /* Full height */
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #0a2f6a; 
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #0c6929; /* Darker hover effect */
+}
+
+/* Main Container with flexbox */
+.container {
+    display: flex;
+    height: calc(100vh - 40px); /* Adjust for header height */
+    padding-top: 20px;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-left: 20px;
+    position: relative;
+}
+
+/* Top right date and time */
+#date-time-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: #555;
+}
